@@ -23,6 +23,10 @@ console.log('\nAccelerate by 15:')
 bmx.accelerate(15)
 bmx.status()
 
+console.log('\nBrake by 15 for 5 seconds:')
+bmx.break(15, 5)
+bmx.status()
+
 console.log('\nRinging bell.')
 bmx.Ring_Bell()
 
@@ -35,12 +39,12 @@ console.log('\nAccelerating, 10 of power for ten seconds:')
 bigTruck.accelerate(10, 10)
 console.log('New speed: ' + String(bigTruck.speed()))
 
-console.log('\nBreaking, 10 of power for 10 sec.')
-bigTruck.accelerate(10, 10)
-console.log('New speed: ' + String(bigTruck.speed()))
-
 console.log('\nApplyed air pressure of 10:')
 bigTruck.applyAir(10)
+console.log('New speed: ' + String(bigTruck.speed()))
+
+console.log('\nBreaking, 10 of power for 10 sec.')
+bigTruck.break(10, 10, 10)
 console.log('New speed: ' + String(bigTruck.speed()))
 
 console.log('\nDone.')
