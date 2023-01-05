@@ -29,4 +29,8 @@ export class Truck extends Vehicle {
   public applyAir (airPressure: number): void {
     this.speedCar = this.speedCar - airPressure / 2
   }
+
+  public break (breakPower: number, breakTime: number, airPressure: number): void {
+    this.speedCar = this.speedCar - (breakPower * breakTime) - (airPressure * breakTime)
+  }
 }
