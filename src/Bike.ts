@@ -8,7 +8,7 @@
 
 import Vehicle from './Vehicle'
 
-export class Bike extends Vehicle {
+class Bike extends Vehicle {
   public cadense: number = 0
 
   // constructor
@@ -36,3 +36,5 @@ export class Bike extends Vehicle {
     this.speedCar = this.cadense * 2
   }
 }
+
+export = Bike
